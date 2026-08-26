@@ -1,0 +1,7 @@
+Add your app icons here before deploying:
+
+- icon-192.png   (192×192)
+- icon-512.png   (512×512)
+- icon-maskable-512.png (512×512, logo inside a safe-zone circle for maskable display)
+
+See README.md step 6 for tools to generate these from a single source image.

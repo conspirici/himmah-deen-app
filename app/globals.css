@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Light: warm beige background, deep brown text */
+  :root, .light {
+    --bg-surface: #F2E6DE;
+    --bg-card: #EDD9CF;
+    --text-primary: #3B1918;
+    --text-secondary: #7A5650;
+    --accent: #4C2322;
+    --accent-soft: #6B3A38;
+    --nav-bg: rgba(242, 230, 222, 0.92);
+    --state-done: #6B8E6B;
+    --state-late: #C07A3E;
+    --state-missed: #A85751;
+    --ring-track: #D6BDB4;
+  }
+
+  /* Dark: deep brown background, warm beige text */
+  .dark {
+    --bg-surface: #1A1210;
+    --bg-card: #2A1F1B;
+    --text-primary: #E8D4CC;
+    --text-secondary: #9D827D;
+    --accent: #C9AD7C;
+    --accent-soft: #B08D57;
+    --nav-bg: rgba(26, 18, 16, 0.92);
+    --state-done: #8FA68E;
+    --state-late: #D97742;
+    --state-missed: #A85751;
+    --ring-track: #3B2E2A;
+  }
+}
+
+html, body {
+  overscroll-behavior-y: none;
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
