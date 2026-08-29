@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, Noto_Naskh_Arabic } from "next/font/google";
 import "./globals.css";
-import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
 import { ThemeProvider } from "@/lib/theme";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -43,7 +42,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className={`${plusJakartaSans.variable} ${notoNaskh.variable} font-sans antialiased bg-surface text-primary transition-colors duration-300`}>
         <ThemeProvider>
-          <ServiceWorkerRegister />
           {children}
         </ThemeProvider>
       </body>
